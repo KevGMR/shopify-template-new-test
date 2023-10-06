@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "regional-demand-app"
+client_id = "e64fed0e7166f8f1a2822d3a87d2533e"
+application_url = "https://reseller-dolls-choose-cc.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://reseller-dolls-choose-cc.trycloudflare.com/auth/callback",
+  "https://reseller-dolls-choose-cc.trycloudflare.com/auth/shopify/callback",
+  "https://reseller-dolls-choose-cc.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-6c10ea49.myshopify.com"
